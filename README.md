@@ -63,3 +63,17 @@ En utilisant cet outil [ici](https://palworld.kriax.ovh/id-finder) et en copiant
 <img width="350" alt="image" src="https://github.com/Salvatore-Als/palworld-faq/assets/58212852/a81dd3bf-1f86-4757-8f4e-42c044672b06">
 
 Dans cet exemple, le **fichier** est `AC4B41F0000000000000000000000000.sav` et la **playeruid** est `2890613232`, comme indiqué dans le résultat de la commande `/ShowPlayers`.
+
+### Memory Leak
+
+Il y a quelques événements qui se produisent dans le jeu et sont supposés causer des fuites de mémoire.
+
+Actuellement, il existe une façon de lutter contre cela.
+
+Définissez `bEnableInvaderEnemy=False` dans votre fichier `PalWorldSettings.ini` 
+
+Les Événements supposés causer un problème :
+
+- Rejoindre les donjons de manière répétée
+- Événements de raid
+- Les Pals de groupe travaillant sur la base ont été vus "déplacer" des objets, mais sortent des limites et les laissent tomber de manière répétée. Cela conduit à une grande accumulation de ressources sur le chemin des Pals.
