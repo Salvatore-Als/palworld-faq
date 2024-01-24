@@ -23,7 +23,7 @@ Nous avons mis en place un outil pour vérifier si votre configuration comporte 
 
 6. Faites une sauvegarde de votre sauvegarde ! Ceci executera un script expérimental (https://github.com/xNul/palworld-host-save-fix/blob/main/fix-host-save.py) avec des bugs connus, donc assurez-vous toujours de conserver une copie de sauvegarde.
 
-7. Télécharger `server-to-serv-wrapping.bat` (TODO: LINK) dans le dossier ou vous avez votre sauvegarde, vous devez donc avoir
+7. Télécharger `server-to-serv-wrapping.bat` (https://github.com/Salvatore-Als/palworld-faq/releases/download/uesave/server-to-serv-wrapping.bat) dans le dossier ou vous avez votre sauvegarde, vous devez donc avoir
 ```plaintext
 - votre_dossier
 -- {VOTRE_SAVE_ID}
@@ -35,9 +35,12 @@ Nous avons mis en place un outil pour vérifier si votre configuration comporte 
 ------ {PLAYER_SAV_ID}.sav
 ```
 
-8. Le wrapper télécharge `uesave.exe` et `fix-host-save.py` et vous demandera l'id la sauvegarde ainsi que l'id de l'ancien joueur et celui du nouveau joueur
+8. Le wrapper télécharge `uesave.exe` et `fix-host-save.py` et vous demandera l'id la sauvegarde ainsi que l'id de l'ancien joueur et celui du nouveau joueur. Attention vous devez avoir installer python.
 
 9. Pour chaque paire correspondante de GUID ancien et GUID nouveau, exécutez le script
+
+*** Le script est très long, vous saurez que c'est terminé quand vous aurez Fix has been applied! Have fun!** 
+*** Attention, ce tuto ne prend pas en charge l'installation de Python !***
 
 10. Copiez la sauvegarde depuis le dossier temporaire vers le serveur dédié. Déplacez ou renommez la sauvegarde que vous aviez dans le serveur dédié vers un autre emplacement.
 
