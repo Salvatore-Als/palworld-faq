@@ -45,24 +45,6 @@ Nous avons mis en place un outil pour vérifier si votre configuration comporte 
 
 12. Si, après 5 minutes de jeu, les Pals d'un joueur ne les attaquent pas ou ne travaillent pas dans leur base, demandez-leur de suivre la solution de contournement [[Pal bug]](https://github.com/xNul/palworld-host-save-fix/blob/main/README.md#pal-bug) pour les corriger.
 
-Sur l'ancien serveur :
-
-- Récupérez le dossier situé dans `Pal/Saved/SaveGames/0/VOTREIDENTIFIANTDESAVE` ainsi que tout son contenu, puis sauvegardez-le localement.
-- Copiez l'identifiant de la sauvegarde comme précédemment (pour cet exemple : **VOTREIDENTIFIANTDESAVE**)
-
--> Arrêtez le nouveau serveur 
-
-Sur le nouveau serveur :
-
-- Collez le dossier précédemment sauvegardé au même emplacement `Pal/Saved/SaveGames/0/VOTREIDENTIFIANTDESAVE`
-- Recherchez le fichier `Pal/Saved/Config/LinuxServer/GameUserSettings.ini` et éditez-le
-- Remplacez la valeur de DedicatedServerName par l'identifiant de sauvegarde précédemment copié (pour cet exemple : **VOTREIDENTIFIANTDESAVE**)
-
--> Relancez le nouveau serveur
-
-- Connectez-vous à votre serveur via le jeu. Si le jeu vous invite à créer un nouveau personnage, utilisez le nom que vous aviez sur l'ancienne sauvegarde.
-- Si le jeu ne vous invite pas à créer un nouveau personnage, vous devriez vous reconnecter avec votre personnage existant.
-
 ### Ma sauvegarde est réinitialisée quand je relance mon serveur
 
 La configuration doit être effectuée lorsque le serveur est éteint. 
