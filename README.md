@@ -30,9 +30,9 @@ Nous avons mis en place un outil pour vérifier si votre configuration comporte 
 --- Level.sav
 --- LevelMeta.sav
 ---- Players
------- {PLAYER_SAV_ID}
------- {PLAYER_SAV_ID}
------- {PLAYER_SAV_ID}
+------ {PLAYER_SAV_ID}.sav
+------ {PLAYER_SAV_ID}.sav
+------ {PLAYER_SAV_ID}.sav
 ```
 
 8. Le wrapper télécharge `uesave.exe` et `fix-host-save.py` et vous demandera l'id la sauvegarde ainsi que l'id de l'ancien joueur et celui du nouveau joueur
