@@ -9,11 +9,13 @@ Il est possible que la configuration ne soit pas prise en compte. Vous devrez **
 ### Je ne suis pas certain que ma configuration soit correcte
 Nous avons mis en place un outil pour vérifier si votre configuration comporte un souci. Il est disponible [ici](https://palworld.kriax.ovh/configuration-validator).
 
-### Je veux importer une sauvegarde depuis un autre serveur dédié
+### Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.
 
 1. Copiez la sauvegarde de votre ancien serveur dédié vers le nouveau serveur dédié.
 
 2. Dans le fichier `PalServer\Pal\Saved\Config\WindowsorLinuxServer\GameUserSettings.ini` du nouveau serveur, modifiez `DedicatedServerName` pour correspondre au nom du dossier de votre sauvegarde. Par exemple, si le nom du dossier de votre sauvegarde est `2E85FD38BAA792EB1D4C09386F3A3CDA`, le `DedicatedServerName` devient `DedicatedServerName=2E85FD38BAA792EB1D4C09386F3A3CDA`.
+
+2bis. **CO-OP :** Supprimer le fichier `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>\WorldOption.sav` pour permettre la modification du fichier `PalWorldSettings.ini`. Les joueurs n'aurons plus leur spawn points mais c'est tout.
 
 3. Démarrez le nouveau serveur et demandez à chaque joueur de créer un nouveau personnage. Lorsqu'un joueur crée un nouveau personnage, un nouveau fichier .sav apparaîtra dans `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>\Players`. Le nom de ce nouveau fichier .sav est le GUID du nouveau joueur. Assurez-vous de noter tous les GUID anciens et nouveaux ainsi que leur correspondance avec les joueurs.
 
