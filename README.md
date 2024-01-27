@@ -1,3 +1,5 @@
+[Buy Me A Coffe ♥︎](https://www.buymeacoffee.com/kriax)
+
 # Palworld FAQ
 N'hésitez pas à soumettre une Pull Request si vous souhaitez ajouter des informations :)
 
