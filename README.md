@@ -21,6 +21,8 @@ N'hésitez pas à soumettre une Pull Request si vous souhaitez ajouter des infor
 
 - L'installation de certains mods se fait sur une sauvegarde VIERGE sans joueurs et sans monde, le mods n'aurais aucun effet en cours de partie.
 
+- Le modding est actuellement limité à Windows. Si vous utilisez un serveur Linux, vous devrez créer une nouvelle installation via l'onglet JEUX.
+  
 #### # Exemple avec le mod `vuxWeightIncrease` qui permet d'augmenter le poids maximum pour les personnages
 
 Tous les joueurs doivent l'installer. 
