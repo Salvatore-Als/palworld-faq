@@ -6,6 +6,8 @@ Dans ce documment je vais vous expliquer les paramètres que vous pouvez modifie
 
 ### Tous ces paramètres ce trouve dans le fichier .ini que vous avez depuis la gestion du serveur depuis l'onglet configuration
 
+#### La modification se fait le serveur éteint !
+
 `Difficulty=None` --> Change la difficulté du jeu, 
 - None est pour la configuration par défaut 
 - 1 est pour avoir un jeu facile, 
