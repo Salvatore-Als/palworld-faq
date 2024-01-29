@@ -37,7 +37,7 @@ Si un client n'a pas le mod, il ne verra pas le changement. La modification sera
 
 ***Sauter cette étape si vous avez déjà installé UE4SS.***
 
-Pour installer un mod côté client, vous devez télécharger CECI (TODO LIEN) et l'installer dans `/{Gameroot}/Pal/Binaries/Win64/`.
+Pour installer un mod côté client, vous devez télécharger [cet outil](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/v2.5.2) et l'installer dans `/{Gameroot}/Pal/Binaries/Win64/`.
 `Gameroot` étant où est installé votre jeu (Steam, disque dur externe, etc).
 
 Les mods doivent se mettre dans le dossier `/{Gameroot}/Pal/Binaries/Win64/Mods`.
