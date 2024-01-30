@@ -17,13 +17,13 @@
 
 ### EN
 
-- [How to Install a Mod on Your VeryGames Server ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/addmods.md)
-- `TODO` [Problème de connexion : Écran noir avec du son](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/blackscreen.md)
-- `TODO` [Je ne suis pas certain que ma configuration soit correcte](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/correctconfig.md)
-- `TODO` [Comment trouver la sauvegarde de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/findplayersave.md)
-- `TODO` [J'ai importé ma sauvegarde, mais mon fichier de configuration ne semble pas fonctionner](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/importconfignotworking.md)
-- `TODO` [Memory Leak](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/leak.md)
-- `TODO` [Récupération d'une Sauvegarde Antérieure](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/odlsave.md)
-- `TODO` [Wipe de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/playerwipe.md)
-- `TODO` [Ma sauvegarde est réinitialisée quand je relance mon serveur](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/rebootsavereinit.md)
-- `TODO` [Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/saveimport.md/)
+- [How to install a mod on your VeryGames server ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/addmods.md)
+- [Connection Issue: Black Screen](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/blackscreen.md)
+- [I'm not sure if my configuration is correct](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/correctconfig.md)
+- [How to find your player's save](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/findplayersave.md)
+- [I've imported my save, but my Configuration file doesn't seem to work](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/importconfignotworking.md)
+- [Memory Leak](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/leak.md)
+- [Retrieving a previous backup](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/odlsave.md)
+- [Player Wipe](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/playerwipe.md)
+- [My save is reset when I restart my server](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/rebootsavereinit.md)
+- [Importing a backup from Another Dedicated Server or Co-op](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/saveimport.md/)

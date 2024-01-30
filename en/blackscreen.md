@@ -1,8 +1,8 @@
-### Problème de connexion : Écran noir avec du son
+### Connection Issue: Black Screen
 
-Il semble que la sauvegarde de votre joueur soit corrompue (voir "Wipe de mon personnage").
+It seems that your player's save is corrupted (see "Wipe of my character").
 
-Pour résoudre cela, vous devez supprimer la sauvegarde de votre personnage qui se trouve dans `/Pal/Saved/SaveGames/0/4BD87C2145BCD3916C05D8B0498854D8/Players/`.
+To resolve this, you need to delete the save of your character located in `/Pal/Saved/SaveGames/0/4BD87C2145BCD3916C05D8B0498854D8/Players/`.
 
 >[!TIP]
-> Au lieu de risquer de supprimer le mauvais fichier de sauvegarde, vous pouvez le renommer pour faire en sorte que le serveur ne le retrouve plus. Pour cela, Vous pouvez par exemple préfixer le nom du fichier avec un tiret bas (`_`).
+> Instead of risking deleting the wrong save file, you can rename it so that the server can't find it anymore. For example, you can prefix the file name with an underscore (`_`).

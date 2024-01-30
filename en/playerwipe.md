@@ -1,3 +1,3 @@
-### Wipe de mon personnage
+### Player Wipe
 
-Ce problème vient du jeu lui-même. Malheureusement, il faut attendre une correction de la part des développeurs.
+This issue stems from the game itself. Unfortunately, it requires a fix from the developers. 

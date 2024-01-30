@@ -1,29 +1,29 @@
-### Récupération d'une Sauvegarde Antérieure
+### Retrieving a previous backup
 
-Dans le répertoire `/backups`, vous pouvez accéder aux sauvegardes des 48 dernières heures de votre serveur. Chaque sauvegarde est réalisée toutes les 30 minutes.
+In the `/backups` directory, you can access backups of your server from the last 48 hours. Each backup is made every 30 minutes.
 
-#### Instructions :
+#### Instructions:
 
-1. **Arrêtez votre Serveur :**
-   Assurez-vous d'arrêter votre serveur et attendez qu'il soit hors ligne.
+1. **Stop Your Server:**
+   Make sure to stop your server and wait for it to be offline.
 
-2. **Renommez le Dossier :**
-   Dans votre dossier `/palworld - verygames/Pal/Saved/SaveGames/0`, localisez le dossier avec un ID (par exemple, `F55CA874D1754520AF7DD397F9A4CC0E`). Renommez ce dossier en ajoutant un préfixe (par exemple, `__F55CA874D1754520AF7DD397F9A4CC0E`) pour qu'il ne soit plus pris en compte.
+2. **Rename the Folder:**
+   In your `/palworld - verygames/Pal/Saved/SaveGames/0` directory, locate the folder with an ID (for example, `F55CA874D1754520AF7DD397F9A4CC0E`). Rename this folder by adding a prefix (for example, `__F55CA874D1754520AF7DD397F9A4CC0E`) so it won't be recognized anymore.
 
-3. **Sélectionnez une Sauvegarde :**
-   Accédez au dossier `/palworld - verygames/Pal/Saved/SaveGames/backups`. Les sauvegardes sont nommées en fonction de la date et de l'heure. Choisissez la sauvegarde la plus récente.
+3. **Select a Backup:**
+   Go to the `/palworld - verygames/Pal/Saved/SaveGames/backups` directory. Backups are named based on date and time. Choose the most recent backup.
 
-4. **Téléchargez la Sauvegarde :**
-   Téléchargez le dossier correspondant à votre sauvegarde (utilisez Filezilla, par exemple). Assurez-vous qu'il porte le même ID que votre sauvegarde principale (dans notre exemple, `F55CA874D1754520AF7DD397F9A4CC0E`).
+4. **Download the Backup:**
+   Download the folder corresponding to your backup (use Filezilla, for example). Make sure it has the same ID as your main save (in our example, `F55CA874D1754520AF7DD397F9A4CC0E`).
 
-5. **Restaurez la Sauvegarde :**
-   Retournez dans le dossier `/palworld - verygames/Pal/Saved/SaveGames/0` et téléversez le dossier de votre sauvegarde.
+5. **Restore the Backup:**
+   Go back to the `/palworld - verygames/Pal/Saved/SaveGames/0` directory and upload the folder of your backup.
 
-6. **Redémarrez le Serveur :**
-   Redémarrez votre serveur et connectez-vous.
+6. **Restart the Server:**
+   Restart your server and log in.
 
-#### Résultats Attendus :
+#### Expected Results:
 
-- Si la sauvegarde est valide, vous devriez retrouver votre inventaire et vos personnages. Vous aurez simplement perdu le temps de jeu entre la corruption de la sauvegarde et l'heure de votre backup. Vous pouvez alors supprimer l'ancienne sauvegarde préfixée (dans notre exemple, `__F55CA874D1754520AF7DD397F9A4CC0E`).
+- If the backup is valid, you should retrieve your inventory and characters. You will have simply lost the gameplay time between the corruption of the save and the time of your backup. You can then delete the prefixed old save (in our example, `__F55CA874D1754520AF7DD397F9A4CC0E`).
 
-- Si la sauvegarde n'est pas valide, essayez une autre sauvegarde en la téléversant dans le dossier `/palworld - verygames/Pal/Saved/SaveGames/0`. Répétez ces étapes jusqu'à trouver une sauvegarde valide.
+- If the backup is not valid, try another backup by uploading it to the `/palworld - verygames/Pal/Saved/SaveGames/0` directory. Repeat these steps until you find a valid backup.

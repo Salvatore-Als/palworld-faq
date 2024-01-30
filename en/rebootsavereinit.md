@@ -1,5 +1,5 @@
-### Ma sauvegarde est réinitialisée quand je relance mon serveur
+### My save is reset when I restart my server
 
-La configuration doit être effectuée lorsque le serveur est éteint. 
+The configuration needs to be done when the server is offline. 
 
-Si elle est réalisée avec le serveur allumé, elle sera écrasée lors du redémarrage, en raison de la sauvegarde effectuée lors de la mise hors ligne du serveur.
+If it's done with the server on, it will be overwritten upon restart due to the save made when the server goes offline.

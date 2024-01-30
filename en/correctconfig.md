@@ -1,2 +1,2 @@
-### Je ne suis pas certain que ma configuration soit correcte
-Nous avons mis en place un outil pour vérifier si votre configuration comporte un souci. Il est disponible [ici](https://palworld.kriax.ovh/configuration-validator).
+### I'm not sure if my configuration is correct
+We have set up a tool to check if your configuration has any issues. It is available [here](https://palworld.kriax.ovh/configuration-validator).

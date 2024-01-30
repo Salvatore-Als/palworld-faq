@@ -1,4 +1,4 @@
-### How to Install a Mod on Your VeryGames Server?
+### How to install a mod on your VeryGames server ?
 
 #### # First and Foremost, Understand Some Key Points:
 

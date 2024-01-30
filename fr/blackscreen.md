@@ -1,4 +1,4 @@
-### Problème de connexion : Écran noir avec du son
+### Problème de connexion : Écran noir
 
 Il semble que la sauvegarde de votre joueur soit corrompue (voir "Wipe de mon personnage").
 

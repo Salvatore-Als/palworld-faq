@@ -1,13 +1,13 @@
 ### Memory Leak
 
-Il y a quelques événements qui se produisent dans le jeu et sont supposés causer des fuites de mémoire.
+There are a few events that occur in the game and are supposed to cause memory leaks.
 
-Actuellement, il existe une façon de lutter contre cela.
+Currently, there is a way to mitigate this.
 
-Définissez `bEnableInvaderEnemy=False` dans votre fichier `PalWorldSettings.ini` 
+Set `bEnableInvaderEnemy=False` in your `PalWorldSettings.ini` file.
 
-Les Événements supposés causer un problème :
+Events known to cause an issue:
 
-- Rejoindre les donjons de manière répétée.
-- Événements de raid.
-- Les Pals de groupe travaillant sur la base ont été vus "déplacer" des objets, mais sortent des limites et les laissent tomber de manière répétée. Cela conduit à une grande accumulation de ressources sur le chemin des Pals.
+- Repeatedly joining dungeons.
+- Raid events.
+- Group Pals working on the base have been seen "moving" objects but go out of bounds and drop them repeatedly. This leads to a large accumulation of resources in the path of the Pals.
