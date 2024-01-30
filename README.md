@@ -17,7 +17,7 @@
 
 ### EN
 
-- `TODO` [How to Install a Mod on Your VeryGames Server ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/addmods.md)
+- [How to Install a Mod on Your VeryGames Server ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/addmods.md)
 - `TODO` [Problème de connexion : Écran noir avec du son](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/blackscreen.md)
 - `TODO` [Je ne suis pas certain que ma configuration soit correcte](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/correctconfig.md)
 - `TODO` [Comment trouver la sauvegarde de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/findplayersave.md)
