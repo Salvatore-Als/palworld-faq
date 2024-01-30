@@ -1,205 +1,29 @@
 [Buy Me A Coffe ♥︎](https://www.buymeacoffee.com/kriax)
 
-# Palworld FAQ
-N'hésitez pas à soumettre une Pull Request si vous souhaitez ajouter des informations :)
-
-***Spécialement conçue pour la communauté VeryGames :)***
-
-### Comment installer un mod sur mon serveur VeryGames ?
-
-#### # Avant tout, il faut comprendre quelques points :
-
-- Le modding n'est pas encore officiel !
-
-- Les mods de type model/skin ne sont pas utilisables sur un serveur, c'est ce qu'on appelle du client side only.
-- Les mods installés sur un serveur doivent être installés sur le jeu de chaque joueur.
-- Les mods côté client ont un but "visuel".
-- Les mods côté serveur ont un but de fonctionnalité et de configuration.
-
-- Les mods peuvent corrompre votre sauvegarde, gardez ceci à l'esprit ! N'hésitez pas à sauvegarder celle-ci.
-- Un mod compatible côté client n'est pas nécessairement compatible côté serveur ! Pour le moment, nous n'avons aucun moyen de le savoir, sauf si son créateur a ajouté l'information dans sa documentation.
-
-- L'installation de certains mods se fait sur une sauvegarde VIERGE sans joueurs et sans monde, le mods n'aurais aucun effet en cours de partie.
-
-- Le modding est actuellement limité à Windows. Si vous utilisez un serveur Linux, vous devrez créer une nouvelle installation via l'onglet JEUX.
-  
-#### # Exemple avec le mod `vuxWeightIncrease` qui permet d'augmenter le poids maximum pour les personnages
-
-Tous les joueurs doivent l'installer. 
-
-Ensuite, si les joueurs configurent le mod sur `500` et le serveur sur `800`, la valeur sera de `800  étant donné que **c'est le serveur qui fait office de configuration**.
-
-Si un client n'a pas le mod, il ne verra pas le changement. La modification sera normalement en place *mais ce n'est pas certain* (j'ai besoin de retour d'information sur ceci).
-
-*Partagez donc tous les mods avec vos amis, c'est très important*
-
-#### # Installer un mod sur votre jeu
-
-***Sauter cette étape si vous avez déjà installé UE4SS.***
-
-Pour installer un mod côté client, vous devez télécharger [cet outil](https://github.com/UE4SS-RE/RE-UE4SS/releases/tag/v2.5.2) et l'installer dans `/{Gameroot}/Pal/Binaries/Win64/`.
-`Gameroot` étant où est installé votre jeu (Steam, disque dur externe, etc).
-
-Les mods doivent se mettre dans le dossier `/{Gameroot}/Pal/Binaries/Win64/Mods`.
-Ensuite, si le mod contient `Enabled.txt`, celui-ci sera automatiquement lancé.
-
-Sinon, dans le fichier `/palworld_windows - verygames/Pal/Binaries/Win64/Mods/mods.txt`, vous pouvez y mettre :
-```plaintext
-NomDuMod : 1 (pour activer)
-NomDuMod : 0 (pour désactiver)
-````
-*`NomDuMod` étant le nom du dossier*
-
-Si un mod est en `Enabled.txt` et que vous indiquez `0` dans le fichier `mods.txt`, celui-ci sera désactivé.
-
-Supprimer le dossier `CACHE` ainsi que les fichiers `imgui.ini` et `UE4SS.log` qui se trouve dans `/palworld_windows - verygames/Pal/Binaries/Win64/`
-
-#### # Installer un mod sur votre serveur VeryGames
-
-Si le mod est en auto installation dans l'onglet plugin, il suffit simplement de l'installer :)
-
-Si le mod n'est pas en auto installation, le mieux est de suivre les indications de sa documentation.
-
-S'il n'y a pas de documentation, partons du principe que son installation est basique, donc il faut simplement le mettre dans le dossier `/palworld_windows - verygames/Pal/Binaries/Win64/Mods/`.
-
-Ensuite, si le mod contient `Enabled.txt`, celui-ci sera automatiquement lancé.
-
-Sinon, dans le fichier `/palworld_windows - verygames/Pal/Binaries/Win64/Mods/mods.txt`, vous pouvez y mettre :
-```plaintext
-NomDuMod : 1 (pour activer)
-NomDuMod : 0 (pour désactiver)
-````
-*`NomDuMod` étant le nom du dossier*
-
-Supprimer le dossier `CACHE` ainsi que les fichiers `imgui.ini` et `UE4SS.log` qui se trouve dans `/palworld_windows - verygames/Pal/Binaries/Win64/`
-
-Si vous n'observez aucun changement, cela signifie que votre mod ne peut pas être utilisé dans une partie en cours ; vous devrez l'utiliser lors d'une nouvelle partie.
-
-### J'ai importé ma sauvegarde, mais mon fichier de configuration ne semble pas fonctionner
-Il est possible que la configuration ne soit pas prise en compte. Vous devrez **supprimer** ou **renommer** le fichier `Pal/Saved/SaveGames/0/{VOTRE_SAUVEGARDE}/WorldOption.sav`.
-
-### Je ne suis pas certain que ma configuration soit correcte
-Nous avons mis en place un outil pour vérifier si votre configuration comporte un souci. Il est disponible [ici](https://palworld.kriax.ovh/configuration-validator).
-
-### Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.
-
-1. Copiez la sauvegarde de votre ancien serveur dédié vers le nouveau serveur dédié.
-
-2. Dans le fichier `PalServer\Pal\Saved\Config\WindowsorLinuxServer\GameUserSettings.ini` du nouveau serveur, modifiez `DedicatedServerName` pour correspondre au nom du dossier de votre sauvegarde. Par exemple, si le nom du dossier de votre sauvegarde est `2E85FD38BAA792EB1D4C09386F3A3CDA`, le `DedicatedServerName` devient `DedicatedServerName=2E85FD38BAA792EB1D4C09386F3A3CDA`.
-
-  2 bis. **CO-OP :** Supprimer le fichier `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>\WorldOption.sav` pour permettre la modification du fichier `PalWorldSettings.ini`. Les joueurs n'auront plus leur spawn points mais c'est tout.
-
-3. Démarrez le nouveau serveur et demandez à chaque joueur de créer un nouveau personnage. Lorsqu'un joueur crée un nouveau personnage, un nouveau fichier en `.sav` apparaîtra dans `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>\Players`. Le nom de ce nouveau fichier `*.sav` est le GUID du nouveau joueur. Assurez-vous de noter tous les GUID anciens et nouveaux ainsi que leur correspondance avec les joueurs.
-
-4. Arrêtez le serveur, puis copiez l'intégralité de la nouvelle sauvegarde du serveur depuis `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>` (il doit s'agir de la sauvegarde contenant tous les nouveaux personnages !) dans un dossier temporaire sur votre ordinateur.
-
-5. Copier les anciennes sauvegardes dans le dossier `PalServer\Pal\Saved\SaveGames\0\<VOTRE_SAVE_ID>\Players`
-
-6. Faites une sauvegarde de votre sauvegarde ! Ceci executera un script expérimental (https://github.com/xNul/palworld-host-save-fix/blob/main/fix-host-save.py) avec des bugs connus, donc assurez-vous toujours de conserver une copie de sauvegarde.
-
-7. Télécharger `server-to-serv-wrapping.bat` (https://github.com/Salvatore-Als/palworld-faq/releases/download/uesave/server-to-serv-wrapping.bat) dans le dossier où vous avez votre sauvegarde. Vous devez donc avoir :
-```plaintext
-- votre_dossier
--- {VOTRE_SAVE_ID}
---- Level.sav
---- LevelMeta.sav
----- Players
------- {PLAYER_SAV_ID}.sav
------- {PLAYER_SAV_ID}.sav
------- {PLAYER_SAV_ID}.sav
-```
-
-8. Le wrapper télécharge `uesave.exe` et `fix-host-save.py` et vous demandera l'ID de la sauvegarde ainsi que l'ID de l'ancien joueur et celui du nouveau joueur. Attention vous devez avoir installé python.
-
-9. Pour chaque paire correspondante de GUID ancien et GUID nouveau, exécutez le script.
-
-*** Le script est très long, vous saurez que c'est terminé quand vous aurez `Fix has been applied! Have fun!`***
-*** Attention, ce tuto ne prend pas en charge l'installation de Python !***
-
-10. Copiez la sauvegarde depuis le dossier temporaire vers le serveur dédié. Déplacez ou renommez la sauvegarde que vous aviez dans le serveur dédié vers un autre emplacement.
-
-11. Redémarrez le serveur et demandez à chaque joueur de rejoindre le serveur avec son personnage corrigé.
-
-12. Si, après 5 minutes de jeu, les Pals d'un joueur ne les attaquent pas ou ne travaillent pas dans leur base, demandez-leur de suivre la solution de contournement [[Pal bug]](https://github.com/xNul/palworld-host-save-fix/blob/main/README.md#pal-bug) pour les corriger.
-
-### Ma sauvegarde est réinitialisée quand je relance mon serveur
-
-La configuration doit être effectuée lorsque le serveur est éteint. 
-
-Si elle est réalisée avec le serveur allumé, elle sera écrasée lors du redémarrage, en raison de la sauvegarde effectuée lors de la mise hors ligne du serveur.
-
-### Wipe de mon personnage
-
-Ce problème vient du jeu lui-même. Malheureusement, il faut attendre une correction de la part des développeurs.
-
-### Problème de connexion : Écran noir avec du son
-
-Il semble que la sauvegarde de votre joueur soit corrompue (voir "Wipe de mon personnage").
-
-Pour résoudre cela, vous devez supprimer la sauvegarde de votre personnage qui se trouve dans `/Pal/Saved/SaveGames/0/4BD87C2145BCD3916C05D8B0498854D8/Players/`.
-
->[!TIP]
-> Au lieu de risquer de supprimer le mauvais fichier de sauvegarde, vous pouvez le renommer pour faire en sorte que le serveur ne le retrouve plus. Pour cela, Vous pouvez par exemple préfixer le nom du fichier avec un tiret bas (`_`).
-
-### Comment trouver la sauvegarde de mon personnage
-
-Un joueur se voit attribuer un numéro de connexion, le `playeruid`, visible via la commande `/ShowPlayers` :
-
-```plaintext
-name,      playeruid,  steamid
-VeryGames, 2890613232, 76561197970000000
-```
-
-Ce `playeruid` correspond à la valeur décimale des 8 premiers chiffres du nom des fichiers de sauvegarde, qui sont en réalité une valeur hexadécimale.
-
-Si vous avez du mal à comprendre, pas de problème. 
-
-En utilisant cet outil [ici](https://palworld.kriax.ovh/id-finder) et en copiant le nom du fichier `.sav`, par exemple `4BD87C2145BCD3916C05D8B0498854D8.sav`, il vous fournira directement le playeruid correspondant.
-
-<img width="350" alt="image" src="https://github.com/Salvatore-Als/palworld-faq/assets/58212852/a81dd3bf-1f86-4757-8f4e-42c044672b06">
-
-Dans cet exemple, le **fichier** est `AC4B41F0000000000000000000000000.sav` et la **playeruid** est `2890613232`, comme indiqué dans le résultat de la commande `/ShowPlayers`.
-
-### Memory Leak
-
-Il y a quelques événements qui se produisent dans le jeu et sont supposés causer des fuites de mémoire.
-
-Actuellement, il existe une façon de lutter contre cela.
-
-Définissez `bEnableInvaderEnemy=False` dans votre fichier `PalWorldSettings.ini` 
-
-Les Événements supposés causer un problème :
-
-- Rejoindre les donjons de manière répétée.
-- Événements de raid.
-- Les Pals de groupe travaillant sur la base ont été vus "déplacer" des objets, mais sortent des limites et les laissent tomber de manière répétée. Cela conduit à une grande accumulation de ressources sur le chemin des Pals.
-
-Dans le répertoire `/backups`, vous pouvez accéder aux sauvegardes des 48 dernières heures de votre serveur. Chaque sauvegarde est réalisée toutes les 30 minutes.
-
-### Récupération d'une Sauvegarde Antérieure
-
-#### Instructions :
-
-1. **Arrêtez votre Serveur :**
-   Assurez-vous d'arrêter votre serveur et attendez qu'il soit hors ligne.
-
-2. **Renommez le Dossier :**
-   Dans votre dossier `/palworld - verygames/Pal/Saved/SaveGames/0`, localisez le dossier avec un ID (par exemple, `F55CA874D1754520AF7DD397F9A4CC0E`). Renommez ce dossier en ajoutant un préfixe (par exemple, `__F55CA874D1754520AF7DD397F9A4CC0E`) pour qu'il ne soit plus pris en compte.
-
-3. **Sélectionnez une Sauvegarde :**
-   Accédez au dossier `/palworld - verygames/Pal/Saved/SaveGames/backups`. Les sauvegardes sont nommées en fonction de la date et de l'heure. Choisissez la sauvegarde la plus récente.
-
-4. **Téléchargez la Sauvegarde :**
-   Téléchargez le dossier correspondant à votre sauvegarde (utilisez Filezilla, par exemple). Assurez-vous qu'il porte le même ID que votre sauvegarde principale (dans notre exemple, `F55CA874D1754520AF7DD397F9A4CC0E`).
-
-5. **Restaurez la Sauvegarde :**
-   Retournez dans le dossier `/palworld - verygames/Pal/Saved/SaveGames/0` et téléversez le dossier de votre sauvegarde.
-
-6. **Redémarrez le Serveur :**
-   Redémarrez votre serveur et connectez-vous.
-
-#### Résultats Attendus :
-
-- Si la sauvegarde est valide, vous devriez retrouver votre inventaire et vos personnages. Vous aurez simplement perdu le temps de jeu entre la corruption de la sauvegarde et l'heure de votre backup. Vous pouvez alors supprimer l'ancienne sauvegarde préfixée (dans notre exemple, `__F55CA874D1754520AF7DD397F9A4CC0E`).
-
-- Si la sauvegarde n'est pas valide, essayez une autre sauvegarde en la téléversant dans le dossier `/palworld - verygames/Pal/Saved/SaveGames/0`. Répétez ces étapes jusqu'à trouver une sauvegarde valide.
+***Made for VeryGames community :)***
+
+### FR
+
+- [Comment installer un mod sur mon serveur VeryGames ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/addmods.md)
+- [Problème de connexion : Écran noir avec du son](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/blackscreen.md)
+- [Je ne suis pas certain que ma configuration soit correcte](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/correctconfig.md)
+- [Comment trouver la sauvegarde de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/findplayersave.md)
+- [J'ai importé ma sauvegarde, mais mon fichier de configuration ne semble pas fonctionner](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/importconfignotworking.md)
+- [Memory Leak](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/leak.md)
+- [Récupération d'une Sauvegarde Antérieure](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/odlsave.md)
+- [Wipe de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/playerwipe.md)
+- [Ma sauvegarde est réinitialisée quand je relance mon serveur](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/rebootsavereinit.md)
+- [Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.](https://github.com/Salvatore-Als/palworld-faq/blob/main//fr/saveimport.md/)
+
+### EN
+
+- `TODO` [How to Install a Mod on Your VeryGames Server ?](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/addmods.md)
+- `TODO` [Problème de connexion : Écran noir avec du son](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/blackscreen.md)
+- `TODO` [Je ne suis pas certain que ma configuration soit correcte](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/correctconfig.md)
+- `TODO` [Comment trouver la sauvegarde de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/findplayersave.md)
+- `TODO` [J'ai importé ma sauvegarde, mais mon fichier de configuration ne semble pas fonctionner](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/importconfignotworking.md)
+- `TODO` [Memory Leak](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/leak.md)
+- `TODO` [Récupération d'une Sauvegarde Antérieure](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/odlsave.md)
+- `TODO` [Wipe de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/playerwipe.md)
+- `TODO` [Ma sauvegarde est réinitialisée quand je relance mon serveur](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/rebootsavereinit.md)
+- `TODO` [Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.](https://github.com/Salvatore-Als/palworld-faq/blob/main//en/saveimport.md/)

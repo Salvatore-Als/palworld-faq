@@ -1,0 +1,2 @@
+### Je ne suis pas certain que ma configuration soit correcte
+Nous avons mis en place un outil pour vérifier si votre configuration comporte un souci. Il est disponible [ici](https://palworld.kriax.ovh/configuration-validator).

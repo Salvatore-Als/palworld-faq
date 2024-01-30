@@ -1,0 +1,2 @@
+### J'ai importé ma sauvegarde, mais mon fichier de configuration ne semble pas fonctionner
+Il est possible que la configuration ne soit pas prise en compte. Vous devrez **supprimer** ou **renommer** le fichier `Pal/Saved/SaveGames/0/{VOTRE_SAUVEGARDE}/WorldOption.sav`.
