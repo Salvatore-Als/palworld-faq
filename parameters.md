@@ -27,11 +27,11 @@ Dans ce document je vais vous expliquer les paramètres que vous pouvez modifier
 
 `PalDamageRateAttack=1.000000` --> Modifie les dégâts de tous les pals.
 
-`PalDamageRateDefense=1.000000` --> Modifie la défense de tous les pals.
+`PalDamageRateDefense=1.000000` --> Modifie les dégâts reçus par les pals.
 
 `PlayerDamageRateAttack=1.000000` --> Modifie les dégâts fait par le joueur.
 
-`PlayerDamageRateDefense=1.000000` --> Modifie la défense du joueur.
+`PlayerDamageRateDefense=1.000000` --> Modifie les dégâts reçus par le joueur.
 
 `PlayerStomachDecreaceRate=1.000000` --> Modifie la durée nécessaire au joueur pour avoir faim.
 
