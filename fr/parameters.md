@@ -87,7 +87,7 @@ Dans ce document je vais vous expliquer les paramètres que vous pouvez modifier
 
 `BaseCampWorkerMaxNum=15` --> Nombre maximum de pals dans une base. 
 > [!NOTE]
-> Cette option n'est pas prise en compte sur les serveurs dédiés.
+> L'option `BaseCampWorkerMaxNum` n'est pas prise en compte sur les serveurs dédiés.
 
 `DropItemAliveMaxHours=1.000000` --> Définit le temps maximal pendant lequel les objets restent en vie après avoir été largués.
 
