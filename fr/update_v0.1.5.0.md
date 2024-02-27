@@ -30,13 +30,15 @@ Lorsque la copie est terminée vous pouvez relancer le serveur.
 
 Les données de progression (tutoriel, découverte de la carte) sont enregistrées coté client (sur l'ordinateur des joueurs). Chaque joueur devra faire la manipulation suivante s'il souhaite conserver sa progression.
 
-Connectez vous une première fois au serveur pour que le jeu crée le dossier avec la progression sur la nouvelle installation de jeu du serveur. Puis fermez le jeu.
+Connectez-vous une première fois au serveur pour que le jeu crée le dossier avec la progression sur la nouvelle installation de jeu du serveur. Puis fermez le jeu.
 
 Ouvez le dossier `C:\Users\{User}\AppData\Local\Pal\Saved\SaveGames\{Palworld-user-ID}` dans lequel `{User}` correspond au nom de la session windows utilisé et {Palworld-user-ID} à votre id Palworld.
 Dans ce dossier vous trouverez un dossier pour chaque installation de serveur auquel vous vous êtes connecté.
-Pour retrouvez à quoi correspond quel fichier il faut comparer les dates de modification.
-Si vous ne vous êtes pas connecté à d'autre serveurs entre temps :
-1- le dossier le plus récemment modifié correspond aux données de la nouvelle installation sur le serveur. Renommez le en y ajoutant un préfixe ou un suffixe reconaissable (tiret bas, la date ou autre).
-2- le second dossier le plus récemment modifié correspond aux données de l'ancienne installation sur le serveur. Copiez le et renommez la copier avec le nom du nouveau dossier.
+
+Pour retrouver à quoi correspond quel fichier il faut comparer les dates de modification.
+Si vous ne vous êtes pas connecté à d'autre serveurs entre-temps :
+
+ 1 Le dossier le plus récemment modifié correspond aux données de la nouvelle installation sur le serveur. Renommez le en y ajoutant un préfixe ou un suffixe reconaissable (tiret bas, la date ou autre).
+ 2 Le second dossier le plus récemment modifié correspond aux données de l'ancienne installation sur le serveur. Copiez-le et renommez la copier avec le nom du nouveau dossier.
 
 ![Manipulation coté client expliquée en image](../img/Update_0.1.5.0_clientside.png?raw=true)
