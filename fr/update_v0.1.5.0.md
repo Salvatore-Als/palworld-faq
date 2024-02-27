@@ -3,7 +3,7 @@
 
 #### Création d'une nouvelle installation
 
-- Dans le panel, dan l'onglet `Jeux` créez une nouvelle installation de Palworld. (Vos données actuelles seronts conservées)
+- Dans le panel, dan l'onglet `Jeux` créez une nouvelle installation (**LINUX** pour un serveur Linux, **WINDOWS** pour un serveur Windows) de Palworld. (Vos données actuelles seronts conservées)
 - Modifiez l'installation active pour la nouvelle installation et redémarrez une première fois le serveur.
 
 #### Récupération de la sauvegarde de l'ancienne installation
