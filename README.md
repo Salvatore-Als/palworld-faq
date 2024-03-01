@@ -16,7 +16,6 @@
 - [Wipe de mon personnage](https://github.com/Salvatore-Als/palworld-faq/blob/main/fr/playerwipe.md)
 - [Ma sauvegarde est réinitialisée quand je relance mon serveur](https://github.com/Salvatore-Als/palworld-faq/blob/main/fr/rebootsavereinit.md)
 - [Je veux importer une sauvegarde depuis un autre serveur dédié ou une co-op.](https://github.com/Salvatore-Als/palworld-faq/blob/main/fr/saveimport.md/)
-- [Corriger mon serveur planté depuis la mise à jour v0.1.5.0](./fr/update_v0.1.5.0.md)
 
 ### EN
 
